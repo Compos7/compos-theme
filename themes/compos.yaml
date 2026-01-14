@@ -1,0 +1,559 @@
+compos:
+  # ==========================================================
+  # 🌄 FONDO Y RUTA
+  # ==========================================================
+  # ruta: /config/themes/compos.yaml
+  lovelace-background: "center / cover no-repeat fixed url('/local/fondos/compos.jpg')"
+  
+  # ==========================================================
+  # 🎨 PALETA DE COLORES BASE (BOOTSTRAP / CP)
+  # ==========================================================
+  cp-blue: "#0d6efd"
+  cp-light-blue: "#cfe2ff"
+  cp-indigo: "#6610f2"
+  cp-purple: "#6f42c1"
+  cp-purple-600: "#59359a"
+  cp-pink: "#d63384"
+  cp-red: "#dc3545"
+  cp-orange: "#fd7e14"
+  cp-orange-600: "#ca6510"
+  cp-amber: "#FFC107"
+  cp-yellow: "#ffc107"
+  cp-green: "#198754"
+  cp-green-200: "#a3cfbb"
+  cp-teal: "#20c997"
+  cp-cyan: "#0dcaf0"
+  cp-black: "#000"
+  cp-white: "#fff"
+  cp-brown: "#653208"
+  cp-gray: "#6c757d"
+  cp-gray-dark: "#343a40"
+  cp-gray-100: "#f8f9fa"
+  cp-gray-200: "#e9ecef"
+  cp-gray-300: "#dee2e6"
+  cp-gray-400: "#ced4da"
+  cp-gray-500: "#adb5bd"
+  cp-gray-600: "#6c757d"
+  cp-gray-700: "#495057"
+  cp-gray-800: "#343a40"
+  cp-gray-900: "#212529"
+
+  # ==========================================================
+  # 🎯 COLORES SEMÁNTICOS BASE
+  # ==========================================================
+  cp-primary: "#4f77b3"
+  cp-secondary: "#6c757d"
+  cp-success: "#198754"
+  cp-info: "#0dcaf0"
+  cp-warning: "#ffc107"
+  cp-danger: "#dc3545"
+  cp-light: "#f8f9fa"
+  cp-dark: "#212529"
+
+  # ==========================================================
+  # 🌈 COLORES BASE EN RGB
+  # ==========================================================
+  cp-primary-rgb: 13, 110, 253
+  cp-secondary-rgb: 108, 117, 125
+  cp-success-rgb: 25, 135, 84
+  cp-info-rgb: 13, 202, 240
+  cp-warning-rgb: 255, 193, 7
+  cp-danger-rgb: 220, 53, 69
+  cp-light-rgb: 248, 249, 250
+  cp-dark-rgb: 33, 37, 41
+
+  # ==========================================================
+  # ✨ ANIMACIONES Y TRANSICIONES
+  # ==========================================================
+  ha-card-transition: "all 0.3s ease-out"
+  paper-item-transition: "all 0.2s ease-in"
+
+  # ==========================================================
+  # 🎚️ DESLIZADORES (SLIDERS)
+  # ==========================================================
+  ha-slider-background-color: var(--cp-tertiary-bg)
+  paper-slider-container-color: var(--cp-tertiary-bg)
+  paper-slider-active-color: var(--cp-primary)
+  paper-slider-knob-color: var(--cp-primary)
+  paper-slider-knob-start-color: var(--cp-primary)
+  paper-slider-pin-color: var(--cp-primary)
+  paper-slider-secondary-color: var(--cp-light-blue)
+
+  # ==========================================================
+  # 🔝 BARRA SUPERIOR (HEADER)
+  # ==========================================================
+  app-header-background-color: "rgba(var(--cp-body-bg-rgb), 0.7)"
+  app-header-text-color: var(--cp-emphasis-color)
+  # Línea debajo de la pestaña activa
+  app-header-selection-bar-color: var(--cp-primary)
+
+  # ==========================================================
+  # 📝 TEXTOS GENERALES
+  # ==========================================================
+  primary-text-color: var(--cp-body-color)
+  secondary-text-color: var(--cp-tertiary-color)
+  text-primary-color: var(--cp-body-color)
+  text-light-primary-color: var(--cp-light-text-emphasis)
+  disabled-text-color: var(--cp-tertiary-color)
+
+  # ==========================================================
+  # 🖥️ INTERFAZ PRINCIPAL
+  # ==========================================================
+  primary-color: "#4f77b3"
+  dark-primary-color: var(--cp-primary)
+  light-primary-color: var(--cp-primary)
+  paper-item-icon-active-color: "#4f77b3"
+  divider-color: var(--cp-secondary-bg)
+  outline-color: var(--cp-border-color)
+  accent-color: "#4f77b3"
+  button-hover-color: "#3e5c8f"
+  lovelace-button-color: "#4f77b3"
+  lovelace-button-hover-color: "#3e5c8f"
+
+  # ==========================================================
+  # ☑️ CONTROLES DE SELECCIÓN (CHECKBOXES/RADIOS)
+  # ==========================================================
+  mdc-theme-secondary: "#4f77b3"
+  mdc-theme-surface: var(--card-background-color)
+
+  # ==========================================================
+  # 🔥 ESTADOS DEL SISTEMA
+  # ==========================================================
+  error-color: var(--cp-danger)
+  warning-color: var(--cp-warning)
+  success-color: var(--cp-success)
+  info-color: var(--cp-info)
+
+  # ==========================================================
+  # 🗂️ FONDOS DE TARJETAS Y MENÚS
+  # ==========================================================
+  card-background-color: "rgba(var(--cp-body-bg-rgb), 0.6)"
+  primary-background-color: var(--cp-body-bg)
+  secondary-background-color: "rgba(var(--cp-secondary-bg-rgb), 0.75)"
+  clear-background-color: "rgba(var(--cp-body-bg-rgb), 0.6)"
+  paper-listbox-background-color: "rgba(var(--cp-body-bg-rgb), 0.95)"
+  more-info-header-background: "rgba(var(--cp-body-bg-rgb), 0.95)"
+  
+  # ==========================================================
+  # 🏷️ INSIGNIAS (BADGES) Y SOMBRAS
+  # ==========================================================
+  ha-label-badge-label-color: var(--cp-primary)
+  label-badge-background-color: "rgba(var(--cp-body-bg-rgb), 0.5)"
+  label-badge-text-color: var(--cp-body-color)
+  label-badge-border-color: "rgba(var(--cp-body-color-rgb), 0.1)"
+  label-badge-red: var(--cp-danger)
+  label-badge-blue: var(--cp-blue)
+  label-badge-green: var(--cp-success)
+  label-badge-yellow: var(--cp-yellow)
+  ha-card-box-shadow: "0 10px 20px -5px rgba(var(--cp-primary-rgb), 0.2)"
+  label-badge-grey: var(--cp-secondary)
+  state-icon-color: var(--cp-secondary-color)
+  state-icon-active-color: var(--cp-success)
+
+  # ==========================================================
+  # 🔋 ENERGÍA (VARIABLES DINÁMICAS)
+  # ==========================================================
+  energy-grid-consumption-color: var(--cp-danger)
+  energy-grid-return-color: var(--cp-purple)
+  energy-solar-color: var(--cp-yellow)
+  energy-non-fossil-color: var(--cp-green)
+  energy-battery-out-color: var(--cp-info)
+  energy-battery-in-color: var(--cp-red)
+  energy-gas-color: var(--cp-gray)
+  energy-water-color: var(--cp-blue)
+
+  # ==========================================================
+  # 🌫️ OPACIDADES (OSCURO SOBRE CLARO)
+  # ==========================================================
+  dark-divider-opacity: 0.12
+  dark-disabled-opacity: 0.38
+  dark-secondary-opacity: 0.54
+  dark-primary-opacity: 0.9
+
+  # ==========================================================
+  # 💡 OPACIDADES (CLARO SOBRE OSCURO)
+  # ==========================================================
+  light-divider-opacity: 0.12
+  light-disabled-opacity: 0.3
+  light-secondary-opacity: 0.7
+  light-primary-opacity: 1
+
+  # ==========================================================
+  # 🌈 DEFINICIONES RGB MAPEDAS
+  # ==========================================================
+  rgb-primary-color: var(--cp-primary-rgb)
+  rgb-accent-color: var(--cp-primary-rgb)
+  rgb-primary-text-color: var(--cp-primary-rgb)
+  rgb-secondary-text-color: var(--cp-secondary-rgb)
+  rgb-text-primary-color: var(--cp-body-color-rgb)
+  rgb-card-background-color: var(--cp-secondary-bg-rgb)
+
+  # ==========================================================
+  # 🖍️ ALIAS DE COLORES MATERIAL
+  # ==========================================================
+  disabled-color: var(--cp-tertiary-color)
+  red-color: var(--cp-red)
+  pink-color: var(--cp-pink)
+  purple-color: var(--cp-purple)
+  deep-purple-color: var(--cp-purple-600)
+  indigo-color: var(--cp-indigo)
+  blue-color: var(--cp-blue)
+  light-blue-color: var(--cp-light-blue)
+  cyan-color: var(--cp-cyan)
+  teal-color: var(--cp-teal)
+  green-color: var(--cp-green)
+  light-green-color: var(--cp-green)
+  lime-color: var(--cp-green-200)
+  yellow-color: var(--cp-yellow)
+  amber-color: var(--cp-orange)
+  orange-color: var(--cp-orange)
+  deep-orange-color: var(--cp-orange-600)
+  brown-color: var(--cp-brown)
+  light-grey-color: var(--cp-gray-400)
+  grey-color: var(--cp-gray)
+  dark-grey-color: var(--cp-gray-600)
+  blue-grey-color: var(--cp-gray-500)
+  black-color: var(--cp-black)
+  white-color: var(--cp-white)
+
+  # ==========================================================
+  # 🔛 ESTADOS ACTIVOS E INACTIVOS GLOBALES
+  # ==========================================================
+  # verde = activo
+  state-active-color: var(--cp-success)
+  # amarillo = atención
+  state-warning-color: var(--cp-warning)
+  # naranja = fuera de línea
+  state-inactive-color: "rgb(209, 85, 34)"
+  # rojo = no disponible / error
+  state-unavailable-color: var(--cp-danger)
+  # azul = Info
+  state-info-color: "rgb(13, 202, 240)"
+
+  # ==========================================================
+  # 🛡️ DOMINIO: ALARMAS
+  # ==========================================================
+  state-alarm_control_panel-armed_away-color: var(--green-color)
+  state-alarm_control_panel-armed_custom_bypass-color: var(--green-color)
+  state-alarm_control_panel-armed_home-color: var(--green-color)
+  state-alarm_control_panel-armed_night-color: var(--green-color)
+  state-alarm_control_panel-armed_vacation-color: var(--green-color)
+  state-alarm_control_panel-arming-color: var(--orange-color)
+  state-alarm_control_panel-disarming-color: var(--orange-color)
+  state-alarm_control_panel-pending-color: var(--orange-color)
+  state-alarm_control_panel-triggered-color: var(--red-color)
+
+  # ==========================================================
+  # 🔔 DOMINIO: ALERTAS Y SENSORES BINARIOS
+  # ==========================================================
+  state-alert-off-color: var(--orange-color)
+  state-alert-on-color: var(--red-color)
+  state-binary_sensor-active-color: var(--amber-color)
+  state-binary_sensor-battery-on-color: var(--red-color)
+  state-binary_sensor-carbon_monoxide-on-color: var(--red-color)
+  state-binary_sensor-gas-on-color: var(--red-color)
+  state-binary_sensor-heat-on-color: var(--red-color)
+  state-binary_sensor-lock-on-color: var(--red-color)
+  state-binary_sensor-moisture-on-color: var(--red-color)
+  state-binary_sensor-problem-on-color: var(--red-color)
+  state-binary_sensor-safety-on-color: var(--red-color)
+  state-binary_sensor-smoke-on-color: var(--red-color)
+  state-binary_sensor-sound-on-color: var(--red-color)
+  state-binary_sensor-tamper-on-color: var(--red-color)
+
+  # ==========================================================
+  # 🌡️ DOMINIO: CLIMATIZACIÓN (CLIMATE)
+  # ==========================================================
+  state-climate-auto-color: var(--green-color)
+  state-climate-cool-color: var(--blue-color)
+  state-climate-dry-color: var(--orange-color)
+  state-climate-fan_only-color: var(--cyan-color)
+  state-climate-heat-color: var(--deep-orange-color)
+  state-climate-heat-cool-color: var(--amber-color)
+
+  # ==========================================================
+  # 🏠 DOMINIO: DISPOSITIVOS GENERALES
+  # ==========================================================
+  state-cover-active-color: var(--cp-success)
+  state-device_tracker-active-color: var(--blue-color)
+  state-device_tracker-home-color: var(--green-color)
+  state-fan-active-color: var(--cp-success)
+  state-humidifier-on-color: var(--blue-color)
+  state-lawn_mower-error-color: var(--red-color)
+  state-lawn_mower-mowing-color: var(--teal-color)
+  state-light-active-color: "rgb(245, 234, 17)"
+
+  # ==========================================================
+  # 🔐 DOMINIO: CERRADURAS (LOCKS)
+  # ==========================================================
+  state-lock-jammed-color: var(--red-color)
+  state-lock-locked-color: var(--green-color)
+  state-lock-pending-color: var(--orange-color)
+  state-lock-unlocked-color: var(--red-color)
+
+  # ==========================================================
+  # 📺 DOMINIO: MEDIA, PERSONAS Y OTROS
+  # ==========================================================
+  state-media_player-active-color: var(--light-blue-color)
+  state-person-active-color: var(--blue-color)
+  state-person-home-color: var(--green-color)
+  state-plant-active-color: var(--red-color)
+  state-siren-active-color: var(--red-color)
+  state-sun-above_horizon-color: var(--amber-color)
+  state-sun-below_horizon-color: var(--indigo-color)
+  state-switch-active-color: var(--cp-success)
+  state-update-active-color: var(--orange-color)
+  state-vacuum-active-color: var(--teal-color)
+  state-valve-active-color: var(--blue-color)
+  state-light-active-color: "rgb(245, 234, 17)"
+  state-media_player-active-color: "#11EEF5"
+
+  # ==========================================================
+  # 🔋 DOMINIO: SENSORES DE BATERÍA
+  # ==========================================================
+  state-sensor-battery-high-color: var(--green-color)
+  state-sensor-battery-low-color: var(--red-color)
+  state-sensor-battery-medium-color: var(--orange-color)
+
+  # ==========================================================
+  # 🚿 DOMINIO: CALENTADORES DE AGUA
+  # ==========================================================
+  state-water_heater-eco-color: var(--green-color)
+  state-water_heater-electric-color: var(--orange-color)
+  state-water_heater-gas-color: var(--orange-color)
+  state-water_heater-heat_pump-color: var(--orange-color)
+  state-water_heater-high_demand-color: var(--deep-orange-color)
+  state-water_heater-performance-color: var(--deep-orange-color)
+
+  # ==========================================================
+  # 📜 HISTORIAL Y GRÁFICOS
+  # ==========================================================
+  history-unavailable-color: transparent
+  history-unknown-color: var(--dark-grey-color)
+
+  # ==========================================================
+  # ⌨️ COMPONENTES DE ENTRADA (INPUTS)
+  # ==========================================================
+  input-idle-line-color: rgba(var(--cp-body-color-rgb), 0.42)
+  input-hover-line-color: rgba(var(--cp-body-color-rgb), 0.87)
+  input-disabled-line-color: rgba(var(--cp-body-color-rgb), 0.15)
+  input-outlined-idle-border-color: rgba(var(--cp-body-color-rgb), 0.38)
+  input-outlined-hover-border-color: rgba(var(--cp-body-color-rgb), 0.87)
+  input-outlined-disabled-border-color: rgba(var(--cp-body-color-rgb), 0.15)
+  input-fill-color: var(--cp-body-bg)
+  input-disabled-fill-color: var(--cp-tertiary-bg)
+  input-ink-color: var(--cp-body-color)
+  input-label-ink-color: var(--cp-secondary-color)
+  input-disabled-ink-color: rgba(var(--cp-body-color-rgb), 0.37)
+  input-dropdown-icon-color: var(--cp-secondary-color)
+
+  # ==========================================================
+  # 🔠 TIPOGRAFÍA (VAADIN)
+  # ==========================================================
+  material-h6-font-size: 1.25rem
+  material-small-font-size: 0.875rem
+  material-caption-font-size: 0.75rem
+  material-button-font-size: 0.875rem
+
+  # ==========================================================
+  # 📑 BARRA LATERAL (SIDEBAR)
+  # ==========================================================
+  # Iconos en estado normal (gris)
+  sidebar-icon-color: var(--cp-secondary-color)
+  # Iconos cuando están seleccionados (azul)
+  sidebar-selected-icon-color: "#4f77b3"
+  # Texto en estado normal (gris)
+  sidebar-text-color: var(--cp-secondary-color)
+  # Texto cuando está seleccionado (azul)
+  sidebar-selected-text-color: "#4f77b3"
+  # Fondo del indicador de selección (azul translúcido)
+  sidebar-selected-background-color: "rgba(var(--cp-primary-rgb), 0.12)"
+  # Hover real en iconos
+  sidebar-icon-hover-color: var(--cp-primary)
+  sidebar-text-hover-color: var(--cp-primary)
+  #Añade borde izquierdo visual (muy Material / iOS)
+  sidebar-selected-border-color: var(--cp-primary)
+  #Sidebar más "glass"
+  sidebar-background-color: "rgba(var(--cp-secondary-bg-rgb), 0.60)"
+
+  # ==========================================================
+  # ☰ BOTÓN SUPERIOR SIDEBAR (toggle)
+  # ==========================================================
+  # Icono normal
+  app-header-icon-color: var(--cp-secondary-color)
+  # El estado "activo" del ☰ solo se ve cuando el sidebar está abierto, no al hacer click. 
+  app-header-icon-active-color: var(--cp-primary)
+  # Icono color cuando pases el ratón por encima
+  app-header-icon-hover-color: var(--cp-primary)
+
+  # ==========================================================
+  # 🎩 DETALLES ADICIONALES DE CABECERA Y MDC
+  # ==========================================================
+  mdc-select-fill-color: var(--cp-body-bg)
+  mdc-select-label-ink-color: var(--cp-body-color)
+  mdc-select-ink-color: var(--cp-body-color)
+  mdc-select-dropdown-icon-color: var(--cp-body-color)
+  mdc-text-field-fill-color: var(--cp-body-bg)
+  mdc-text-field-label-ink-color: var(--cp-body-color)
+  mdc-text-field-ink-color: var(--cp-body-color)
+  table-header-background-color: var(--cp-body-bg)
+
+  # ==========================================================
+  # 🖱️ SCROLLBAR (Sidebar incluido)
+  # ==========================================================
+  # Barra (thumb) – azul claro translúcido
+  scrollbar-thumb-color: "rgba(var(--cp-primary-rgb), 0.35)"
+  # Fondo del scroll – muy sutil
+  scrollbar-track-color: "rgba(var(--cp-body-bg-rgb), 0.15)"
+  # Hover (cuando pasas el ratón)
+  scrollbar-thumb-hover-color: "rgba(var(--cp-primary-rgb), 0.55)"
+
+  # ==========================================================
+  # 📈 Gráficos e historial 
+  # ==========================================================
+  graph-color-1: var(--cp-primary)
+  graph-color-2: var(--cp-success)
+  graph-color-3: var(--cp-warning)
+  graph-color-4: var(--cp-danger)
+  graph-color-5: var(--cp-info)
+  # Para el fondo:
+  graph-grid-color: rgba(var(--cp-body-color-rgb), 0.06)
+
+  # ==========================================================
+  # ☢️ Estados críticos:
+  # ==========================================================
+  error-state-icon-color: var(--cp-danger)
+  warning-state-icon-color: var(--cp-warning)
+  success-state-icon-color: var(--cp-success)
+
+  # ==========================================================
+  # 🗨️ TOOLTIPS SIDEBAR (REAL – POLYMER / MDC)
+  # ==========================================================
+  # Fondo del tooltip
+  paper-tooltip-background: "rgba(var(--cp-body-bg-rgb), 0.95)"
+  # Texto del tooltip
+  paper-tooltip-text-color: var(--cp-emphasis-color)
+  # Sombra (MUY importante para contraste)
+  paper-tooltip-opacity: 0.97
+  paper-tooltip-delay-in: 0
+  paper-tooltip-delay-out: 0
+  # MDC tooltips (HA moderno)
+  mdc-tooltip-fill-color: "rgba(var(--cp-body-bg-rgb), 0.95)"
+  mdc-tooltip-ink-color: var(--cp-emphasis-color)
+  # Bordes y separación visual
+  tooltip-border-radius: 8px
+  tooltip-box-shadow: "0 6px 18px rgba(0, 0, 0, 0.25)"
+
+  # ==========================================================
+  # 🌗 MODOS DE TEMA (CLARO Y OSCURO)
+  # ==========================================================
+  modes:
+    # ☀️ MODO CLARO (LIGHT)
+    light:
+      cp-body-color: "#212529"
+      cp-body-color-rgb: 33, 37, 41
+      cp-body-bg: "#ffffff"
+      cp-body-bg-rgb: 255, 255, 255
+      cp-emphasis-color: "#000"
+      cp-emphasis-color-rgb: 0, 0, 0
+      cp-secondary-color: "#6c757d"
+      cp-secondary-color-rgb: 108, 117, 125
+      cp-secondary-bg: "#e9ecef"
+      cp-secondary-bg-rgb: 233, 236, 239
+      cp-tertiary-color: "rgba(33, 37, 41, 0.5)"
+      cp-tertiary-color-rgb: 33, 37, 41
+      cp-tertiary-bg: "#f8f9fa"
+      cp-tertiary-bg-rgb: 248, 249, 250
+      cp-primary-text-emphasis: "#052c65"
+      cp-secondary-text-emphasis: "#2b2f32"
+      cp-success-text-emphasis: "#0a3622"
+      cp-info-text-emphasis: "#055160"
+      cp-warning-text-emphasis: "#664d03"
+      cp-danger-text-emphasis: "#58151c"
+      cp-light-text-emphasis: "#495057"
+      cp-dark-text-emphasis: "#495057"
+      cp-primary-bg-subtle: "#cfe2ff"
+      cp-secondary-bg-subtle: "#e2e3e5"
+      cp-success-bg-subtle: "#d1e7dd"
+      cp-info-bg-subtle: "#cff4fc"
+      cp-warning-bg-subtle: "#fff3cd"
+      cp-danger-bg-subtle: "#f8d7da"
+      cp-light-bg-subtle: "#fcfcfd"
+      cp-dark-bg-subtle: "#ced4da"
+      cp-primary-border-subtle: "#9ec5fe"
+      cp-secondary-border-subtle: "#c4c8cb"
+      cp-success-border-subtle: "#a3cfbb"
+      cp-info-border-subtle: "#9eeaf9"
+      cp-warning-border-subtle: "#ffe69c"
+      cp-danger-border-subtle: "#f1aeb5"
+      cp-light-border-subtle: "#e9ecef"
+      cp-dark-border-subtle: "#adb5bd"
+      cp-heading-color: "inherit"
+      cp-link-color: "#0d6efd"
+      cp-link-color-rgb: 13, 110, 253
+      cp-link-hover-color: "#0a58ca"
+      cp-link-hover-color-rgb: 10, 88, 202
+      cp-code-color: "#d63384"
+      cp-highlight-color: "#212529"
+      cp-highlight-bg: "#fff3cd"
+      cp-border-color: "#dee2e6"
+      cp-border-color-translucent: "rgba(0, 0, 0, 0.175)"
+      cp-form-valid-color: "#198754"
+      cp-form-valid-border-color: "#198754"
+      cp-form-invalid-color: "#dc3545"
+      cp-form-invalid-border-color: "#dc3545"
+
+    # 🌙 MODO OSCURO (DARK)
+    dark:
+      cp-body-color: "#dee2e6"
+      cp-body-color-rgb: 222, 226, 230
+      cp-body-bg: "#212529"
+      cp-body-bg-rgb: 33, 37, 41
+      cp-emphasis-color: "#fff"
+      cp-emphasis-color-rgb: 255, 255, 255
+      cp-secondary-color: "rgba(222, 226, 230, 0.75)"
+      cp-secondary-color-rgb: 222, 226, 230
+      cp-secondary-bg: "#343a40"
+      cp-secondary-bg-rgb: 52, 58, 64
+      cp-tertiary-color: "rgba(222, 226, 230, 0.5)"
+      cp-tertiary-color-rgb: 222, 226, 230
+      cp-tertiary-bg: "#2b3035"
+      cp-tertiary-bg-rgb: 43, 48, 53
+      cp-primary-text-emphasis: "#6ea8fe"
+      cp-secondary-text-emphasis: "#a7acb1"
+      cp-success-text-emphasis: "#75b798"
+      cp-info-text-emphasis: "#6edff6"
+      cp-warning-text-emphasis: "#ffda6a"
+      cp-danger-text-emphasis: "#ea868f"
+      cp-light-text-emphasis: "#f8f9fa"
+      cp-dark-text-emphasis: "#dee2e6"
+      cp-primary-bg-subtle: "#031633"
+      cp-secondary-bg-subtle: "#161719"
+      cp-success-bg-subtle: "#051b11"
+      cp-info-bg-subtle: "#032830"
+      cp-warning-bg-subtle: "#332701"
+      cp-danger-bg-subtle: "#2c0b0e"
+      cp-light-bg-subtle: "#343a40"
+      cp-dark-bg-subtle: "#1a1d20"
+      cp-primary-border-subtle: "#084298"
+      cp-secondary-border-subtle: "#41464b"
+      cp-success-border-subtle: "#0f5132"
+      cp-info-border-subtle: "#087990"
+      cp-warning-border-subtle: "#997404"
+      cp-danger-border-subtle: "#842029"
+      cp-light-border-subtle: "#495057"
+      cp-dark-border-subtle: "#343a40"
+      cp-heading-color: "inherit"
+      cp-link-color: "#6ea8fe"
+      cp-link-color-rgb: 110, 168, 254
+      cp-link-hover-color: "#8bb9fe"
+      cp-link-hover-color-rgb: 139, 185, 254
+      cp-code-color: "#e685b5"
+      cp-highlight-color: "#dee2e6"
+      cp-highlight-bg: "#664d03"
+      cp-border-color: "#495057"
+      cp-border-color-translucent: "rgba(255, 255, 255, 0.15)"
+      cp-form-valid-color: "#75b798"
+      cp-form-valid-border-color: "#75b798"
+      cp-form-invalid-color: "#ea868f"
+      cp-form-invalid-border-color: "#ea868f"
