@@ -27,11 +27,19 @@ Diseñado para dashboards elegantes, pantallas grandes y móviles.
 
 ---
 
+## 📦 Instalación mediante HACS
+
+1. HACS → Interfaz → Temas
+2. Menú (⋮) → Repositorios personalizados
+3. Añadir:
+https://github.com/Compos7/compos-theme
+4. Categoría: Tema
+5. Instalar y recargar la interfaz
+ 
 ## 📂 Instalación manual
 
 1. Copia la carpeta "themes" y "www" a:
 /config
-
 
 2. Asegúrate de tener esto en tu "configuration.yaml":
 
