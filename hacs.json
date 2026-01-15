@@ -1,4 +1,7 @@
 {
   "name": "Compos Theme",
+  "content_in_root": false,
+  "domains": ["frontend"],
+  "country": "ES",
   "render_readme": true
 }
