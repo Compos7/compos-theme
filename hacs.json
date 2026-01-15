@@ -1,5 +1,6 @@
 {
   "name": "Compos Theme",
+  "type": "theme",
   "content_in_root": false,
   "domains": ["frontend"],
   "country": "ES",
