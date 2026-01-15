@@ -1,16 +1,4 @@
 {
   "name": "Compos Theme",
-  "type": "theme",
-  "content_in_root": false,
-  "domains": ["frontend"],
-  "country": "ES",
-  "render_readme": true,
-  "screenshots": [
-    "screenshots/dashboard-light.png",
-    "screenshots/dashboard-dark.png",
-    "screenshots/mobile-light.png",
-    "screenshots/mobile-light-sidebar.png",
-    "screenshots/mobile-dark.png",
-    "screenshots/mobile-dark-sidebar.png"
-  ]
+  "render_readme": true
 }
